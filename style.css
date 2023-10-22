@@ -9,6 +9,7 @@ body {
     background-color: var(--gray_background);
     color: var(--gray_text);
     font-family: 'Onest', sans-serif;
+    overflow-x: hidden;
 }
 
 /* main */
