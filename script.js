@@ -1,4 +1,3 @@
-
 let elms = document.getElementsByClassName("navigation");
 
 function show() {
@@ -18,6 +17,7 @@ function hide() {
             x.style.width = "0%"
 })
 }
+
 const carousel = document.querySelector(".carousel");
 const arrowBtns = document.querySelectorAll(".wrapper i");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
@@ -74,4 +74,3 @@ const infiniteScroll = () => {
     }
 }
 carousel.addEventListener("scroll", infiniteScroll);
-
