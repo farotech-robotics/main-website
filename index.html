@@ -13,29 +13,51 @@
     <script src="script.js" defer></script>
 </head>
 
-<body onscroll="hide()">
+<body onscroll="hide(); scroll()">
 
     <!-- Header: background, frc logo top left, our logo in the middle, text under our logo  -->
     <div id="main">
-
-        <div class="main-container">
-
-            <div class="farotech-logo-container">
-                <img class="farotech-logo-img" src="assets/main/FaroTech_ornage.svg" alt="logo"/>
-                <div class="farotech-logo-text">
-                    <h1> FaroTech <br></h1>
-                    <h3> Do RoboTy </h3>
-                </div>
-            </div>
+        <nav id="nav1" class="ontop">
             <div class="first-logo-div">
                 <div class="first-logo">
                     <a href="https://www.firstinspires.org/robotics/frc"><img class="first-logo-img" src="assets/main/frc-logo.png" alt="logo">
                     </a>
                 </div>
-                <button class="hamburger" onclick="show()">
-                    <i class="fa fa-bars"></i>
-                </button>
+                
             </div>
+            <button class="hamburger" onclick="show()">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- <div id="menu-menu">
+                    <div id="menu_div" class="hidden">
+                        
+                    </div>
+                    <button onclick="show_menu()">MENU</button>
+            </div> -->
+            
+                
+            <!-- <img src="https://placekitten.com/200/141" onclick="show_menu()"/> -->
+            
+        </nav>
+
+        <div class="main-container">
+            <div class="background-top">
+                <img class="background-top-img" src="assets/main/main_background_up.png" alt="background">
+            </div>
+
+            <div class="background-bottom">
+                <img class="background-bottom-img" src="assets/main/main_background_down.png" alt="background"/>
+            </div>
+
+            <div class="farotech-logo-container">
+                <img class="farotech-logo-img" src="assets/main/logo.svg" alt="logo"/>
+                <div class="farotech-logo-text">
+                    <h1> FaroTech<br><h2>#9281</h2></h1>
+                    <h3> Do RoboTy </h3>
+                </div>
+            </div>
+            
         </div>
     </div>
     <div class="navigation">
@@ -96,6 +118,7 @@
             </div>
         </div>
     </div>
+    
 
     <!-- Who Are We: Section with team picture and description -->
     <div id="whoAreWe">
@@ -113,12 +136,12 @@
             <div id="rtec"></div>
 
             <div id="time_starting">
-                <img src="/assets/timeline/starting.svg" alt="faro kula" id="faro_ball2">
+                <img src="/main-website-main/assets/timeline/starting.svg" alt="faro kula" id="faro_ball2">
             </div>
 
             <div id="time_line">
                 <div class="text_down" id="d1">
-                    <img src="/assets/timeline/line_up.svg" alt="line">
+                    <img src="/main-website-main/assets/timeline/line_up.svg" alt="line">
                     <div class="text_contain_down">
                         <p class="time_text">Działająca baza robota<br>06.2023</p>
                     </div>
@@ -127,10 +150,10 @@
                     <div class="text_contain_up">
                         <p class="time_text">Przeniesienie prac na PW<br>10.2023</p>
                     </div>
-                    <img src="/assets/timeline/line_down.svg" alt="line">
+                    <img src="/main-website-main/assets/timeline/line_down.svg" alt="line">
                 </div>
                 <div class="text_down" id="d2">
-                    <img src="/assets/timeline/line_up.svg" alt="line">
+                    <img src="/main-website-main/assets/timeline/line_up.svg" alt="line">
                     <div class="text_contain_down">
                         <p class="time_text">Robot z edycji 2022<br>12.2023</p>
                     </div>
@@ -139,10 +162,10 @@
                     <div class="text_contain_up">
                         <p class="time_text">FIRST <br/> kickoff<br>01.2024</p>
                     </div>
-                    <img src="/assets/timeline/line_down.svg" alt="line">
+                    <img src="/main-website-main/assets/timeline/line_down.svg" alt="line">
                 </div>
                 <div class="text_down" id="d3">
-                    <img src="/assets/timeline/line_up.svg" alt="line">
+                    <img src="/main-website-main/assets/timeline/line_up.svg" alt="line">
                     <div class="text_contain_down">
                         <p class="time_text">Zawody w Stambule<br>03.2024</p>
                     </div>
@@ -151,17 +174,64 @@
                     <div class="text_contain_up">
                         <p class="time_text">Finały w Houston<br>04.2024</p>
                     </div>
-                    <img src="/assets/timeline/line_down.svg" alt="line">
+                    <img src="/main-website-main/assets/timeline/line_down.svg" alt="line">
                 </div>
             </div>
         </div>
     </div>
 
+
+    <div id="sponsors">
+        <!-- <div id="sponsorsSlider">
+            <div class="sponsor">
+                <a href="https://www.pw.edu.pl/engpw">
+                    <img src="/main-website-main/assets/sponsors/WUT.png" alt="WUT" class="pic">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.firstinspires.org/robotics/frc">
+                    <img src="/main-website-main/assets/sponsors/first.png" alt="First" class="pic">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.santander.pl/klient-indywidualny/bankowosc-internetowa">
+                    <img src="/main-website-main/assets/sponsors/santander.png" alt="Santander" class="pic">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://um.warszawa.pl/">
+                    <img src="/main-website-main/assets/sponsors/wawa.png" alt="mt. Warszawa" class="pic">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.pb.pl/">
+                    <img src="/main-website-main/assets/sponsors/pulsBiznesu.png" alt="Puls Biznesu" class="pic">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://bielany.um.warszawa.pl/">
+                    <img src="/main-website-main/assets/sponsors/bielany.png" alt="Bielany" class="pic">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://pol-mare.pl/">
+                    <img src="/main-website-main/assets/sponsors/polMare.jpg" alt="Pol Mare" class="pic">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://stem.pw.edu.pl/">
+                    <img src="/main-website-main/assets/sponsors/stem.png" alt="Stem" class="pic">
+                </a>
+            </div>
+        </div> -->
+
+
+
     <!-- Contact" Here's how to contact us -->
     <div id="contact">
 
         <div id="contact_logo">
-            <img id="logo" src="assets/contact/FaroTech_whitute.svg" alt="Logo naszego zespołu">
+            <img id="logo" src="assets/contact/logo_white.svg" alt="Logo naszego zespołu">
         </div>
 
         <div id="contact_contact">
@@ -186,7 +256,29 @@
             <a href="https://www.tiktok.com/@farotech_official">
                 <img id="tt_logo" src="assets/contact/tiktok.png" alt="Nasz Tiktok" target="_blank">
             </a>
-        </div>
     </div>
+
+        
+    </div>
+    <script>
+        function scroll(){
+        var a = window.scrollY;
+        var nav = document.getElementById("nav1");
+        // console.log(a);
+
+        if (a > 0) {
+            nav.classList.add("scrolled");
+            nav.classList.remove("ontop");
+            // $('#nav').addClass('solid-nav');
+
+        } else {
+            nav.classList.remove("scrolled");
+            nav.classList.add("ontop");
+            // $('#nav').removeClass('solid-nav');
+        }
+}
+
+    </script>
+    
 </body>
 </html>
