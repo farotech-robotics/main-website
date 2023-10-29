@@ -19,6 +19,14 @@ function hide() {
 })
 }
 
+function scrollhide(){
+  var lasta = 0;
+  var a = window.scrollY;
+  if (a!=lasta) {
+    
+  }
+}
+
 /* Przeciaganie */
 // const dragStart = (e) => {
 //     isDragging = true;
