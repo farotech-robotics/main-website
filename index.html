@@ -18,13 +18,9 @@
     <!-- Header: background, frc logo top left, our logo in the middle, text under our logo  -->
     <div id="main">
         <nav id="nav1" class="ontop">
-            <div class="first-logo-div">
                 <div class="first-logo">
-                    <a href="https://www.firstinspires.org/robotics/frc"><img class="first-logo-img" src="assets/main/frc-logo.png" alt="logo">
-                    </a>
+                    <a id="first_link" href="https://www.firstinspires.org/robotics/frc"><img class="first-logo-img" src="assets/main/frc-logo.png" alt="logo"></a>
                 </div>
-                
-            </div>
             <button class="hamburger" onclick="show()">
                 <i class="fa fa-bars"></i>
             </button>
@@ -42,6 +38,13 @@
         </nav>
 
         <div class="main-container">
+            <div class="background-top">
+                <img class="background-top-img" src="assets/main/main_background_up.png" alt="background">
+            </div>
+
+            <div class="background-bottom">
+                <img class="background-bottom-img" src="assets/main/main_background_down.png" alt="background"/>
+            </div>
 
             <div class="farotech-logo-container">
                 <img class="farotech-logo-img" src="assets/main/logo.svg" alt="logo"/>
@@ -67,50 +70,6 @@
     </div>
 
     <!-- Sponsors: sponsors logos in slider -->
-    <div id="sponsors">
-        <div id="sponsorsSlider">
-            <div class="sponsor">
-                <a href="https://www.pw.edu.pl/engpw">
-                    <img src="/assets/sponsors/WUT.png" alt="WUT" class="pic">
-                </a>
-            </div>
-            <div class="sponsor">
-                <a href="https://www.firstinspires.org/robotics/frc">
-                    <img src="/assets/sponsors/first.png" alt="First" class="pic">
-                </a>
-            </div>
-            <div class="sponsor">
-                <a href="https://www.santander.pl/klient-indywidualny/bankowosc-internetowa">
-                    <img src="/assets/sponsors/santander.png" alt="Santander" class="pic">
-                </a>
-            </div>
-            <div class="sponsor">
-                <a href="https://um.warszawa.pl/">
-                    <img src="/assets/sponsors/wawa.png" alt="mt. Warszawa" class="pic">
-                </a>
-            </div>
-            <div class="sponsor">
-                <a href="https://www.pb.pl/">
-                    <img src="/assets/sponsors/pulsBiznesu.png" alt="Puls Biznesu" class="pic">
-                </a>
-            </div>
-            <div class="sponsor">
-                <a href="https://bielany.um.warszawa.pl/">
-                    <img src="/assets/sponsors/bielany.png" alt="Bielany" class="pic">
-                </a>
-            </div>
-            <div class="sponsor">
-                <a href="https://pol-mare.pl/">
-                    <img src="/assets/sponsors/polMare.jpg" alt="Pol Mare" class="pic">
-                </a>
-            </div>
-            <div class="sponsor">
-                <a href="https://stem.pw.edu.pl/">
-                    <img src="/assets/sponsors/stem.png" alt="Stem" class="pic">
-                </a>
-            </div>
-        </div>
-    </div>
     
 
     <!-- Who Are We: Section with team picture and description -->
@@ -175,7 +134,7 @@
 
 
     <div id="sponsors">
-        <!-- <div id="sponsorsSlider">
+        <div id="sponsorsSlider">
             <div class="sponsor">
                 <a href="https://www.pw.edu.pl/engpw">
                     <img src="/main-website-main/assets/sponsors/WUT.png" alt="WUT" class="pic">
@@ -216,7 +175,7 @@
                     <img src="/main-website-main/assets/sponsors/stem.png" alt="Stem" class="pic">
                 </a>
             </div>
-        </div> -->
+        </div>
 
 
 
@@ -236,18 +195,20 @@
                 jj.piramidowicz@gmail.com</a> <br/>
             +48 696 960 865
         </div>
-
         <div id="contact_media">
+            <a href="https://www.facebook.com/@FaroTech">
+                <img class="log" id="fb_logo" src="assets/contact/icons8-facebook-144.png" alt="Nasz Facebook" target="_blank">
+            </a>
             <a href="https://www.youtube.com/@firstfarotech/featured" target="_blank">
-                <img id="yt_logo" src="assets/contact/youtube.png" alt="Nasz kanał na Youtube"/>
+                <img class="log" id="yt_logo" src="assets/contact/icons8-youtube-144.png" alt="Nasz kanał na Youtube"/>
             </a>
 
             <a href="http://www.instagram.com">
-                <img id="ig_logo" src="assets/contact/instagram.png" alt="Nasz Instagram" target="_blank">
+                <img class="log" id="ig_logo" src="assets/contact/icons8-instagram-144.png" alt="Nasz Instagram" target="_blank">
             </a>
 
             <a href="https://www.tiktok.com/@farotech_official">
-                <img id="tt_logo" src="assets/contact/tiktok.png" alt="Nasz Tiktok" target="_blank">
+                <img class="log" id="tt_logo" src="assets/contact/icons8-tiktok-144.png" alt="Nasz Tiktok" target="_blank">
             </a>
     </div>
 
