@@ -821,18 +821,18 @@ max-width: 40vw;
 max-height: 40vh;
 }
 #yt_logo{
-width: 12vh;
+/* width: 12vh; */
 
-margin-top: 7vh;
+margin-top: 2vh;
 margin-bottom: 1vw;
 }
 #ig_logo{
-width: 12vh;
+/* width: 12vh; */
 
 margin-bottom: 1vw;
 }
 #tt_logo{
-width: 12vh;
+/* width: 12vh; */
 
 margin-bottom: 1vw;
 }
@@ -1132,5 +1132,5 @@ margin-bottom: 1vw;
 
 
 .log{
- height: 100px;
+ height: 10vh;
 }
